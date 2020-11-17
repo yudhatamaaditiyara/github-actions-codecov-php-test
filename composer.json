@@ -1,0 +1,23 @@
+{
+  "name": "yudhatamaaditiyara/github-actions-codecov-php-test",
+  "description": "yudhatamaaditiyara/github-actions-codecov-php-test",
+  "require": {
+    "php": "^7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Test\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --coverage-text -c test/phpunit.config.xml",
+    "coverage": "phpunit --coverage-clover=build/logs/coverage-clover.xml -c test/phpunit.config.xml"
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

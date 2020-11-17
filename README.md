@@ -1,0 +1,2 @@
+# github-actions-codecov-php-test
+[![Build Status](https://github.com/yudhatamaaditiyara/github-actions-codecov-php-test/workflows/ci/badge.svg?branch=master)](https://github.com/yudhatamaaditiyara/github-actions-codecov-php-test/actions)
