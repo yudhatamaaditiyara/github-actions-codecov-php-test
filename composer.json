@@ -13,8 +13,8 @@
     }
   },
   "scripts": {
-    "test": "phpunit --coverage-text -c test/phpunit.config.xml",
-    "coverage": "phpunit --coverage-clover=build/logs/coverage-clover.xml -c test/phpunit.config.xml"
+    "test": "phpunit -c test/phpunit.config.xml",
+    "coverage": "phpunit --coverage-text --coverage-clover=build/coverage/coverage-clover.xml -c test/phpunit.config.xml"
   },
   "config": {
     "sort-packages": true,
