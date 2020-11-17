@@ -1,6 +1,6 @@
 name: ci
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -70,4 +70,3 @@ jobs:
           file: ./build/logs/coverage-clover.xml
           path_to_write_report: ./build/logs/coverage-clover.gz
           fail_ci_if_error: true
-          verbose: true
