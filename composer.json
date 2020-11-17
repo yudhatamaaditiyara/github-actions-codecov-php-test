@@ -2,7 +2,7 @@
   "name": "yudhatamaaditiyara/github-actions-codecov-php-test",
   "description": "yudhatamaaditiyara/github-actions-codecov-php-test",
   "require": {
-    "php": "^7.2"
+    "php": ">=7.2.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.5"
