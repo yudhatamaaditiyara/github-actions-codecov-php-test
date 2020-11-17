@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test:
-    name: PHP ${{matrix.php-version}}
+    name: test - PHP ${{matrix.php-version}}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -67,8 +67,7 @@ jobs:
           name: coverage
           flags: unittests
           token: ${{secrets.CODECOV_TOKEN}}
-          directory: ./build/logs/
-          file: ./coverage-clover.xml
+          file: ./build/logs/coverage-clover.xml
           path_to_write_report: ./build/logs/coverage-clover.gz
           fail_ci_if_error: true
           verbose: true
